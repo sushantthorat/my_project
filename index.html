@@ -2,20 +2,25 @@
 <html>
    <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>RedMi</title>
+      <link rel="stylesheet" href="css/animate.css">
+      <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
       <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/output.css">
       <link rel="stylesheet" href="fonts/fonts/fonts.min.css">
       <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="css/output.css">
+      <script src="js/custom.js"></script>
+
    </head>
    <body>
       <!-- top-header start -->
       <div class="top-header">
          <nav class="navbar navbar-inverse">
             <div class="container">
-               <div class="container-fluid">
+
                   <ul class="nav navbar-nav left-nav">
                      <li>
                         <a href="#FIXME" title="MI INDIA">MI INDIA</a>
@@ -36,13 +41,11 @@
                      </li>
                      <li class="cart_li">
                         <a href="#FIXME" title="CART" class="cart"><span class="glyphicon glyphicon-shopping-cart"></span> CART</a>
+                        <p class="hid-text">Your cart is empty</p>
                      </li>
                   </ul>
-                  <p class="hid-text">
-                     Your cart is empty
-                  </p>
                </div>
-            </div>
+
          </nav>
       </div>
       <!-- site navigation -->
@@ -53,7 +56,7 @@
                   <a href="#FIXME" title="Mi Home"><img src="images/mihome.png" alt="Mi Home"></a>
                </h1>
                <ul class="nav navbar-nav">
-                  <li><a href="#FIXME" title="Mi Phones">Mi Phones</a></li>
+                  <li><a href="#FIXME" title="Mi Phones" class="first_child_li hover_toggle">Mi Phones</a></li>
                   <li><a href="#FIXME" title="Redmi phones">Redmi phones</a></li>
                   <li><a href="#FIXME" title="Audio">Audio</a></li>
                   <li><a href="#FIXME" title="Smart Devices">Smart Devices</a></li>
@@ -63,10 +66,36 @@
                   <li><a href="#FIXME" title="Mi Community">Mi Community</a></li>
                   <li><a href="#FIXME" title="Support">Support</a></li>
                </ul>
+               <a href="#" class="hamberger_menu">
+                 <img src="images/hamberger.png" alt="" width="40px">
+               </a>
+               <div class="curtain_hidden">
+                 <ul class="first_child_li_hover">
+                   <li>
+                     <a href="#FIXME" title="mi_phone">
+                       <img src="images/f_li.jpg" alt="mi_phone">
+                     </a>
+                   </li>
+                 </ul>
+                 <ul class="second_child_li_hover">
+                   <li>
+                     <a href="#FIXME" title="mi_phone">
+                       <img src="images/f_li.jpg" alt="mi_phone">
+                     </a>
+                   </li>
+                 </ul>
+                 <ul class="third_child_li_hover">
+                   <li>
+                     <a href="#FIXME" title="mi_phone">
+                       <img src="images/f_li.jpg" alt="mi_phone">
+                     </a>
+                   </li>
+                 </ul>
+               </div>
             </div>
          </div>
       </nav>
-      <div id="myCarousel" class="carousel slide">
+      <div id="myCarousel" class="carousel slide fade_carousel">
          <!-- Indicators -->
          <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -81,9 +110,9 @@
             <div class="item active">
                <img src="images/2.jpg" alt="Redmi">
                <div class="container">
-                  <div class="carousel-caption">
+                  <div class="carousel-caption slideOutRight">
                      <div class="txt c-black">
-                        <h3 class="title">Redmi Note 4Power has a new look</h3>
+                        <h3 class="title slideOutUp ">Redmi Note 4Power has a new look</h3>
                         <p class="descp">Now available in stores near you</p>
                         <p class="price follow">
                            <span class="dollar"></span>
@@ -99,7 +128,7 @@
                <div class="container">
                   <div class="carousel-caption">
                      <div class="txt c-black">
-                        <h3 class="title" style="font-size: 60px;">Mi VR Play 4<br><small>Virtually anything is possible</small></h3>
+                        <h3 class="title">Mi VR Play 4<br><small>Virtually anything is possible</small></h3>
                         <p class="descp">Google Cardboard compatible
                            Take panoramic VR photos
                            Fits 11.5 cm - 14.5 cm phones
@@ -212,7 +241,7 @@
               <span class="hd_line"></span>
            </div>
            <!-- product images grid -->
-           <div class="row produc_img_grid">
+           <div class="row product_img_grid">
               <div class="col-sm-6 product_cat">
                  <a href="#FIXME" title="Product">
                  <img src="images/product_img1L.jpg" height="525px" alt="Product" >
