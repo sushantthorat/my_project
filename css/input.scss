@@ -58,7 +58,7 @@ a {
     left: 13%!important;
 
     h3 {
-      font: 100 60px $font;
+      font: 100 64px $font;
     }
 
     .descp {
@@ -66,7 +66,7 @@ a {
     }
 
     a {
-      width: 222px;
+      width: 42%;
       border: 1px solid;
       background-color: transparent;
       padding: 10px 30px;
@@ -534,6 +534,10 @@ footer {
   position: absolute;
 }
 
+.hover_toggle:hover .container {
+  background-color: #fff;
+}
+
 .hover_toggle:hover .curtain_hidden {
   display: block;
 }
@@ -555,9 +559,20 @@ footer {
 
 // media query
 @media screen and (max-width:1200px) {
+
   .site-navigation {
     .container {
       position: relative;
+
+        .logo {
+          a {
+            margin-left:-100%;
+          &:hover {
+          margin-left: -100%;
+          }
+          img { width:100%; }
+        }
+      }
     }
     .navbar-nav {
       display: none;
@@ -580,13 +595,10 @@ footer {
     margin-top: 30px;
   }
 
-  .logo {
-    width: 7% !important;
-  }
-
   .product img {
     width:100%;
   }
+
   .hd_line {
     display: none;
   }
@@ -594,27 +606,46 @@ footer {
     text-align: center;
   }
 
-  .icon-play {
-    left:113px;
+  .video_section {
+    .icon-play {
+      top:-30px;
+      left:113px;
+    }
+
+    .descp {
+      top:172px;
+      font-size: 1.4rem;
+    }
   }
 
-  .video_section .descp {
-    top:172px;
-    font-size: 1.4rem;
+  .fade_carousel {
+    top:0px;
+    margin-bottom: 85px;
+    .carousel-caption {
+      .title {
+        font-size: 5.4rem;
+      }
+    }
   }
 }
 
 @media screen and (max-width:992px) {
-  .icon-play {
-    top: 33px;
-    left:79px;
+.video_section {
+  text-align: center;
+  .col-sm-4 {
+      .icon-play {
+        top: 33px;
+        left:43%;
+      }
+      .descp {
+        top:226px;
+        left: 42px;
+      }
+    }
   }
-  .video_section {
-    text-align: center;
-  }
-  .video_section .descp {
-    top:134px;
-    font-size: 1rem;
+
+  .contact_section .social_icon a {
+    margin-left: 10%;
   }
 }
 
@@ -656,29 +687,42 @@ footer {
     }
   }
 
-  #productCarousel .carousel-caption
-  {
-    h3 {
-      font-size: 2.5rem;
-    }
-    .wh_line {
-        margin: 16px auto;
-    }
-    p {
-      margin: 16px auto 12px;
-      line-height: 1;
+  #myCarousel {
+    .carousel-caption {
+      .title {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
   }
 
-  .service_section {
-    text-align: center;
+  #productCarousel {
+    .carousel-inner
+      {
+        h3 {
+          font-size: 2.5rem;
+        }
+        .wh_line {
+            margin: 16px auto;
+        }
+        p {
+          margin: 16px auto 12px;
+          line-height: 1;
+        }
+      }
 
-    .col-sm-4 {
-      margin-bottom: 20px;
+      .service_section {
+        text-align: center;
+
+        .col-sm-4 {
+          margin-bottom: 20px;
+        }
+      }
+
+    .title {
+      font-size: 1.4rem;
     }
-  }
-
-  .title {
-    font-size: 3rem !important;
   }
 }
