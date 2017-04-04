@@ -10,6 +10,10 @@ body {
   font-family:$font;
 }
 
+.container{
+  width: 94%;
+}
+
 a {
   display: inline-block;
   transition: all .2s linear;
@@ -94,6 +98,12 @@ a {
   z-index: 2;
   background-color: transparent;
 
+    .offer_gif {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 10px;
+    }
+
     .logo {
       width: 5%;
       overflow: hidden;
@@ -114,7 +124,7 @@ a {
     margin: 31px 0px;
 
     li {
-      margin-right: 4px;
+      margin-right: 11px;
       a {
         font: 600 14px $font;
         color: #fff;
@@ -203,6 +213,10 @@ a {
 
   img {
     width: 100%;
+  }
+
+  .wide_img {
+    padding-left: 3%;
   }
 
   .product_cat {
@@ -612,7 +626,7 @@ footer {
       width: 43px;
       background: url(../images/icon-slide-nav1.png) no-repeat;
       background-position: 0px;
-      bottom: 227px;
+      bottom: 51%;
       position: absolute;
      }
 
@@ -621,7 +635,16 @@ footer {
        background-position: -42px;
      }
  }
+.carousel-control:focus, .carousel-control:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: transparent;
+  outline: none;
+}
 
+.carousel-control.left, .carousel-control.right {
+  background: none!important;
+}
 // media query
 @media screen and (max-width:1200px) {
 

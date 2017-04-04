@@ -1,6 +1,9 @@
 body {
   font-family: "Proxima Nova", Georgia, sans-serif; }
 
+.container {
+  width: 94%; }
+
 a {
   display: inline-block;
   transition: all .2s linear; }
@@ -62,6 +65,10 @@ a {
   position: relative;
   z-index: 2;
   background-color: transparent; }
+  .site-navigation .offer_gif {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px; }
   .site-navigation .logo {
     width: 5%;
     overflow: hidden;
@@ -76,7 +83,7 @@ a {
     display: inline-block;
     margin: 31px 0px; }
     .site-navigation ul li {
-      margin-right: 4px; }
+      margin-right: 11px; }
       .site-navigation ul li a {
         font: 600 14px "Proxima Nova", Georgia, sans-serif;
         color: #fff;
@@ -140,6 +147,8 @@ a {
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18); }
   .product_img_grid img {
     width: 100%; }
+  .product_img_grid .wide_img {
+    padding-left: 3%; }
   .product_img_grid .product_cat {
     padding-left: 0px !important;
     padding-right: 0px !important; }
@@ -433,10 +442,19 @@ footer {
   width: 43px;
   background: url(../images/icon-slide-nav1.png) no-repeat;
   background-position: 0px;
-  bottom: 227px;
+  bottom: 51%;
   position: absolute; }
 .carousel-fade .next {
   background-position: -42px; }
+
+.carousel-control:focus, .carousel-control:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: transparent;
+  outline: none; }
+
+.carousel-control.left, .carousel-control.right {
+  background: none !important; }
 
 @media screen and (max-width: 1200px) {
   .site-navigation .container {
