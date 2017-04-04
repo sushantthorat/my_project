@@ -57,7 +57,7 @@ a {
 .site-navigation {
   position: relative;
   z-index: 2;
-  background-color: transperent; }
+  background-color: transparent; }
   .site-navigation .logo {
     width: 5%;
     overflow: hidden;
@@ -423,57 +423,54 @@ footer {
     text-align: center; }
 
   .icon-play {
-    left: 113px !important;
-    margin: 70px auto !important; }
+    left: 113px; }
 
   .video_section .descp {
     top: 172px;
-    margin: 0px 10px;
     font-size: 1.4rem; } }
 @media screen and (max-width: 992px) {
   .icon-play {
     top: 33px;
-    left: 79px !important;
-    margin: 40px auto; }
+    left: 79px; }
 
   .video_section {
     text-align: center; }
 
   .video_section .descp {
     top: 134px;
-    margin: 0px 10px;
     font-size: 1rem; } }
 @media screen and (max-width: 767px) {
   .product {
     width: 100%;
     text-align: center;
-    margin-bottom: 10px; }
+    margin-bottom: 10px !important; }
 
-  .right-nav {
-    float: none; }
+  .left-nav {
+    display: inline-block; }
+    .left-nav li {
+      border-right: none !important; }
+
+  .right-nav li {
+    border-right: none !important; }
 
   .reviews {
     margin-bottom: 10px; }
 
   .video_section div {
     margin-bottom: 10px; }
-
-  .icon-play {
-    top: 75px;
-    left: 274px !important; }
-
-  .video_section .descp {
-    top: 165px;
-    left: 60px;
-    margin: 0px 10px;
-    font-size: 2rem; }
+    .video_section div .icon-play {
+      left: 40%; }
+    .video_section div .descp {
+      top: 200px;
+      font-size: 2rem; }
 
   #productCarousel .carousel-caption h3 {
     font-size: 2.5rem; }
   #productCarousel .carousel-caption .wh_line {
     margin: 16px auto; }
   #productCarousel .carousel-caption p {
-    margin: 16px auto 12px; }
+    margin: 16px auto 12px;
+    line-height: 1; }
 
   .service_section {
     text-align: center; }

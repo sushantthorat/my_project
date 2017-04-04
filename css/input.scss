@@ -86,7 +86,7 @@ a {
   position: relative;
   // left: 8.8%;
   z-index: 2;
-  background-color: transperent;
+  background-color: transparent;
 
     .logo {
       width: 5%;
@@ -595,13 +595,11 @@ footer {
   }
 
   .icon-play {
-    left:113px !important;
-    margin: 70px auto !important;
+    left:113px;
   }
 
   .video_section .descp {
     top:172px;
-    margin:0px 10px;
     font-size: 1.4rem;
   }
 }
@@ -609,15 +607,13 @@ footer {
 @media screen and (max-width:992px) {
   .icon-play {
     top: 33px;
-    left:79px !important;
-    margin: 40px auto;
+    left:79px;
   }
   .video_section {
     text-align: center;
   }
   .video_section .descp {
     top:134px;
-    margin:0px 10px;
     font-size: 1rem;
   }
 }
@@ -626,11 +622,21 @@ footer {
   .product {
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
+  }
+
+  .left-nav {
+    display: inline-block;
+    li {
+      border-right:none !important;
+    }
   }
 
   .right-nav {
-    float: none;
+    // float: none;
+    li {
+      border-right:none !important;
+    }
   }
 
   .reviews {
@@ -639,17 +645,15 @@ footer {
 
   .video_section div {
     margin-bottom: 10px;
-  }
-  .icon-play {
-    top: 75px;
-    left:274px!important;
-  }
 
-  .video_section .descp {
-    top:165px;
-    left:60px;
-    margin:0px 10px;
-    font-size: 2rem;
+    .icon-play {
+      left:40%;
+    }
+
+    .descp {
+      top:200px;
+      font-size: 2rem;
+    }
   }
 
   #productCarousel .carousel-caption
@@ -662,6 +666,7 @@ footer {
     }
     p {
       margin: 16px auto 12px;
+      line-height: 1;
     }
   }
 
