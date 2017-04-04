@@ -55,14 +55,15 @@ a {
   .carousel-caption {
     max-width: 500px;
     text-align: left;
-    left: 13%!important;
+    left: 17%!important;
 
     h3 {
       font: 100 64px $font;
     }
 
     .descp {
-      width:40%;
+      width:100%;
+      color:#fff;
     }
 
     a {
@@ -82,6 +83,11 @@ a {
     }
   }
 }
+
+.c-black {
+  font-weight: 100 !important;
+}
+
 .site-navigation {
   position: relative;
   // left: 8.8%;
@@ -556,6 +562,65 @@ footer {
 .chat_box:focus {
   text-decoration: none;
 }
+ .prev_fade {
+   display: inline-block;
+   height: 88px;
+   width: 43px;
+   background: url(../images/icon-slide-nav2.png) no-repeat;
+   background-position: 0px;
+   top: 238px;
+   position: absolute;
+ }
+
+ .next_fade {
+   @extend .prev_fade;
+   background-position: -55px;
+ }
+
+ // carousel-fade style
+ .carousel-fade {
+     .carousel-inner {
+         .item {
+             transition-property: opacity;
+         }
+
+         .item,
+         .active.left,
+         .active.right {
+             opacity: 0;
+         }
+
+         .active,
+         .next.left,
+         .prev.right {
+             opacity: 1;
+         }
+
+         .next,
+         .prev,
+         .active.left,
+         .active.right {
+             left: 0;
+             transform: translate3d(0, 0, 0);
+         }
+     }
+
+
+     .prev {
+      display: inline-block;
+      height: 50px;
+      width: 43px;
+      background: url(../images/icon-slide-nav1.png) no-repeat;
+      background-position: 0px;
+      bottom: 227px;
+      position: absolute;
+     }
+
+     .next {
+       @extend .prev;
+       background-position: -42px;
+     }
+ }
 
 // media query
 @media screen and (max-width:1200px) {
