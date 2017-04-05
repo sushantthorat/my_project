@@ -2,7 +2,7 @@
 $orange: #ff6709;
 $gray:#616161;
 $box-shadow:0 8px 16px rgba(0,0,0,0.18);
-$font:'Proxima Nova', Georgia, sans-serif;
+$font: font124655, 'Proxima Nova', Georgia , sans-serif;
 
 
 // syle
@@ -60,6 +60,7 @@ a {
     max-width: 500px;
     text-align: left;
     left: 17%!important;
+    text-shadow: none;
 
     h3 {
       font: 100 64px $font;
@@ -67,7 +68,6 @@ a {
 
     .descp {
       width:100%;
-      color:#fff;
     }
 
     a {
@@ -192,7 +192,7 @@ a {
   }
 
   img {
-    width: 372px;
+    width: 100%;
   }
 }
 
@@ -216,7 +216,7 @@ a {
   }
 
   .wide_img {
-    padding-left: 3%;
+    margin-left: 3%;
   }
 
   .product_cat {
@@ -548,25 +548,69 @@ footer {
 }
 
 .curtain_hidden {
+  width: 1349px;
   display: none;
-  overflow: hidden;
+  // overflow: hidden;
   background-color: #fff;
   position: absolute;
+  left:-40px;
+
+  ul {
+    list-style: none;
+    float: left;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+    }
+    .blk_txt {
+      color:#000;
+      display: block;
+    }
+    .cost {
+      color:$orange;
+      display: block;
+    }
+  }
 }
 
-.hover_toggle:hover .container {
-  background-color: #fff;
+.white_bk {
+  color: $gray;
+  &:hover {
+    color: $orange;
+  }
 }
 
-.hover_toggle:hover .curtain_hidden {
-  display: block;
+.hover_nav {
+  // cursor: default;
 }
 
-.site-navigation .container {
+.blk { color: #000; }
+
+.site-navigation .hover_nav_l {
   position: relative;
+  transition: all .2s linear;
     .hamberger_menu {
       display: none;
     }
+
+    &:hover .curtain_hidden {
+      display: block;
+    }
+}
+.site-navigation .hover_nav:hover .collapse_nav a {
+  color:#000;
+}
+
+.curtain_hidden {
+  .first_child_li_hover,
+  .second_child_li_hover,
+  .third_child_li_hover {
+    // display: none;
+  }
+}
+.first_child_li:hover {
+  .first_child_li_hover { display: block; }
 }
 
 .hd_section {
@@ -595,13 +639,13 @@ footer {
  .carousel-fade {
      .carousel-inner {
          .item {
-             transition-property: opacity;
+             transition: opacity .2s linear;
          }
 
          .item,
          .active.left,
          .active.right {
-             opacity: 0;
+             opacity:.7;
          }
 
          .active,
@@ -616,6 +660,7 @@ footer {
          .active.right {
              left: 0;
              transform: translate3d(0, 0, 0);
+             -webkit-transform: translate3d(0,0,0);
          }
      }
 
@@ -645,8 +690,16 @@ footer {
 .carousel-control.left, .carousel-control.right {
   background: none!important;
 }
+
+.c-black {
+  h3,
+  .descp,
+  span {
+    color:#000;
+  }
+}
 // media query
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1345px) {
 
   .site-navigation {
     .container {

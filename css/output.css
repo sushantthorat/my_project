@@ -1,5 +1,5 @@
 body {
-  font-family: "Proxima Nova", Georgia, sans-serif; }
+  font-family: font124655, "Proxima Nova", Georgia, sans-serif; }
 
 .container {
   width: 94%; }
@@ -39,12 +39,12 @@ a {
   .fade_carousel .carousel-caption {
     max-width: 500px;
     text-align: left;
-    left: 17% !important; }
+    left: 17% !important;
+    text-shadow: none; }
     .fade_carousel .carousel-caption h3 {
-      font: 100 64px "Proxima Nova", Georgia, sans-serif; }
+      font: 100 64px font124655, "Proxima Nova", Georgia, sans-serif; }
     .fade_carousel .carousel-caption .descp {
-      width: 100%;
-      color: #fff; }
+      width: 100%; }
     .fade_carousel .carousel-caption a {
       width: 42%;
       border: 1px solid;
@@ -85,7 +85,7 @@ a {
     .site-navigation ul li {
       margin-right: 11px; }
       .site-navigation ul li a {
-        font: 600 14px "Proxima Nova", Georgia, sans-serif;
+        font: 600 14px font124655, "Proxima Nova", Georgia, sans-serif;
         color: #fff;
         transition: all .2s linear;
         padding-left: 23px; }
@@ -133,7 +133,7 @@ a {
   .product_grid .middle {
     margin: 0 0; }
   .product_grid img {
-    width: 372px; }
+    width: 100%; }
 
 .star_product_section {
   text-align: center;
@@ -148,7 +148,7 @@ a {
   .product_img_grid img {
     width: 100%; }
   .product_img_grid .wide_img {
-    padding-left: 3%; }
+    margin-left: 3%; }
   .product_img_grid .product_cat {
     padding-left: 0px !important;
     padding-right: 0px !important; }
@@ -253,7 +253,7 @@ a {
     margin: 174px auto;
     font-size: 16px; }
     #productCarousel .carousel-caption h3 {
-      font: 100 48px "Proxima Nova", Georgia, sans-serif;
+      font: 100 48px font124655, "Proxima Nova", Georgia, sans-serif;
       line-height: 1; }
     #productCarousel .carousel-caption p {
       margin: 35px auto 12px;
@@ -384,21 +384,45 @@ footer {
       text-align: right; }
 
 .curtain_hidden {
+  width: 1349px;
   display: none;
-  overflow: hidden;
   background-color: #fff;
-  position: absolute; }
+  position: absolute;
+  left: -40px; }
+  .curtain_hidden ul {
+    list-style: none;
+    float: left;
+    text-align: center; }
+    .curtain_hidden ul a {
+      text-decoration: none; }
+    .curtain_hidden ul .blk_txt {
+      color: #000;
+      display: block; }
+    .curtain_hidden ul .cost {
+      color: #ff6709;
+      display: block; }
 
-.hover_toggle:hover .container {
-  background-color: #fff; }
+.white_bk {
+  color: #616161; }
+  .white_bk:hover {
+    color: #ff6709; }
 
-.hover_toggle:hover .curtain_hidden {
-  display: block; }
+.blk {
+  color: #000; }
 
-.site-navigation .container {
-  position: relative; }
-  .site-navigation .container .hamberger_menu {
+.site-navigation .hover_nav_l {
+  position: relative;
+  transition: all .2s linear; }
+  .site-navigation .hover_nav_l .hamberger_menu {
     display: none; }
+  .site-navigation .hover_nav_l:hover .curtain_hidden {
+    display: block; }
+
+.site-navigation .hover_nav:hover .collapse_nav a {
+  color: #000; }
+
+.first_child_li:hover .first_child_li_hover {
+  display: block; }
 
 .hd_section {
   text-align: center; }
@@ -419,11 +443,11 @@ footer {
   background-position: -55px; }
 
 .carousel-fade .carousel-inner .item {
-  transition-property: opacity; }
+  transition: opacity .2s linear; }
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
-  opacity: 0; }
+  opacity: .7; }
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right,
@@ -435,7 +459,8 @@ footer {
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   left: 0;
-  transform: translate3d(0, 0, 0); }
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0); }
 .carousel-fade .prev, .carousel-fade .next {
   display: inline-block;
   height: 50px;
@@ -456,7 +481,12 @@ footer {
 .carousel-control.left, .carousel-control.right {
   background: none !important; }
 
-@media screen and (max-width: 1200px) {
+.c-black h3,
+.c-black .descp,
+.c-black span {
+  color: #000; }
+
+@media screen and (max-width: 1345px) {
   .site-navigation .container {
     position: relative; }
     .site-navigation .container .logo a {
