@@ -658,5 +658,77 @@ footer {
 
   .product_img_grid a {
     width: 100%; } }
+.hover_toggle {
+  color: #616161 !important; }
 
-/*# sourceMappingURL=output.css.map */
+.hover_toggle:hover {
+  color: #ff6709 !important; }
+
+.notifypage {
+  background-color: #f5f5f5; }
+  .notifypage .redirect_cont_page {
+    padding: 10px 0;
+    font-size: 12px; }
+    .notifypage .redirect_cont_page .seperate {
+      margin: 0 17px 0 14px; }
+    .notifypage .redirect_cont_page .hm_page {
+      color: #b0b0b0; }
+      .notifypage .redirect_cont_page .hm_page:hover {
+        color: #ff6709;
+        text-decoration: none; }
+
+.srevice_back_head {
+  background: url("../images/service-mipad-img01.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 450px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 60px; }
+  .srevice_back_head .container {
+    text-align: center; }
+    .srevice_back_head .container h3 {
+      font-size: 40px;
+      font-weight: 600;
+      margin: 170px auto 21px;
+      line-height: 60px; }
+    .srevice_back_head .container p {
+      font-size: 22px;
+      font-weight: 300; }
+
+.main {
+  padding-top: 60px; }
+  .main .categories {
+    padding: 30px 0; }
+    .main .categories .pr_div {
+      padding: 38px 0 40px;
+      background-color: #fff; }
+      .main .categories .pr_div .product_cat_content {
+        border-right: 1px solid #e0e0e0; }
+        .main .categories .pr_div .product_cat_content a {
+          display: block;
+          text-align: center;
+          font-size: 16px;
+          color: #757575;
+          text-transform: uppercase; }
+          .main .categories .pr_div .product_cat_content a:hover {
+            color: #ff6709;
+            text-decoration: none; }
+      .main .categories .pr_div .last-child_pr_div {
+        border-right: none; }
+  .main .faq_grid_layout .col-sm-6 {
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    padding: 20px; }
+    .main .faq_grid_layout .col-sm-6:hover {
+      border-color: #ff6709; }
+    .main .faq_grid_layout .col-sm-6:hover > a {
+      color: #ff6709;
+      text-decoration: none; }
+    .main .faq_grid_layout .col-sm-6 a {
+      padding: 30px 0;
+      display: block;
+      color: #757575;
+      font-size: 16px; }
+
+/*# sourceMappingURL=supportout.css.map */

@@ -30,11 +30,14 @@ $(document).ready(function(){
   $('.hover_nav').hover(
       function(){
           $(".curtain_hidden").slideDown(350);
-          $('.site-navigation').css('background-color','#fff');
-          $('.site-navigation').css('border-bottom','1px solid #939493');
+          // $('.site-navigation').css('background-color','#fff');
+          // $('.site-navigation').css('border-bottom','1px solid #939493');
           $('.hover_toggle').css('color','#000');
           $('.hover_toggle').hover(function(){
             $(this).css("color", "#ff6709");
+        },function()
+         {
+           $(this).css("color", "#fff");
         });
       },
       function(){
@@ -56,5 +59,45 @@ $(document).ready(function(){
   //         $(content2).slideUp(350);
   //     }
   // );
+  $('.first_child_li').hover(
+      function(){
+          $('img#fli1').attr('src','images/f_li.jpg');
+          $('img#fli2').attr('src','images/fli3.jpg');
+          $('img#fli3').attr('src','images/fli4.jpg');
+          $('img#fli4').attr('src','images/fli4.jpg');
+      }
+  );
+  $('.second_child_li').hover(
+      function(){
+        $('img#fli1').attr('src','images/fli25.jpg');
+        $('img#fli2').attr('src','images/fli21.jpg');
+        $('img#fli3').attr('src','images/fli22.jpg');
+        $('img#fli4').attr('src','images/fli23.jpg');
+      }
+  );
+  $('.third_child_li').hover(
+      function(){
+        $('img#fli1').attr('src','images/headphone1.jpg');
+        $('img#fli2').attr('src','images/headphone2.jpg');
+        $('img#fli3').attr('src','images/fli33.jpg');
+        $('img#fli4').attr('src','images/fli34.jpg');
+      }
+  );
+  $('.fourth_child_li').hover(
+      function(){
+        $('img#fli1').attr('src','images/ap08.jpg');
+        $('img#fli2').attr('src','images/fli46.jpg');
+        $('img#fli3').attr('src','images/fli41.jpg');
+        $('img#fli4').attr('src','images/fli42.jpg');
+      }
+  );
+  $('.fifth_child_li').hover(
+      function(){
+        $('img#fli1').attr('src','images/fli51.jpg');
+        $('img#fli2').attr('src','images/fli55.jpg');
+        $('img#fli3').attr('src','images/fli44.jpg');
+        $('img#fli4').attr('src','images/fli4.jpg');
+      }
+  );
 
 });
